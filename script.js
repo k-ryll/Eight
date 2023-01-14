@@ -2,16 +2,10 @@ var hole = document.getElementById("hole");
 var game = document.getElementById("game");
 var result = document.getElementById("result");
 var text = document.getElementById("text");
-var song = document.getElementById("song");
 var score = 0;
 var jumping = 0;
 
 hole.addEventListener("animationiteration", RanHole);
-
-function songplay() {
-  song.play();
-}
-songplay();
 
 function RanHole() {
   var random = Math.floor(Math.random() * (500 - 150 + 1)) - 500;
